@@ -38,7 +38,7 @@ io.on('connection',(socket)=>{
 
     socket.on("message",({message,id})=>{
         io.emit('sendMessage',{user:users[id],message,id})
-        console.log("send message");
+        console.log("send message")
 
     })
 
